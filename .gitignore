@@ -1,0 +1,63 @@
+# Exclude my test
+*/MyTest
+
+# Exclude the build directory
+build/*
+
+# Exclude temp nibs and swap files
+*.swp
+*~.nib
+
+# Exclude OS X folder attributes
+.DS_Store
+build/
+
+# Exclude user-specific XCode 3 and 4 files
+*.pbxuser
+!default.pbxuser
+*.mode1
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.pbxuser
+*.perspective
+*.perspectivev3
+!default.perspectivev3
+*.xcuserstate
+*.xcworkspace
+xcuserdata
+*/xcuserdata
+*.xccheckout
+*/project.xcworkspace/xcuserdata
+profile
+*.moved-aside
+DerivedData
+.idea/
+*.hmap
+*.ipa
+
+# Exclude Generated files
+*.o
+*.pyc
+*.hi
+
+# Exclude Python modules
+MANIFEST
+dist/
+
+build/*
+
+# Exclude Backup files
+\#*#
+.#*
+
+# CocoaPods
+Pods/
+Podfile.lock
+
+# InjectionProject
+iOSInjectionProject/*
+
+# checkpoints
+.ipynb_checkpoints

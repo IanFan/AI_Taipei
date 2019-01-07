@@ -60,4 +60,5 @@ Podfile.lock
 iOSInjectionProject/*
 
 # checkpoints
+resource/
 .ipynb_checkpoints

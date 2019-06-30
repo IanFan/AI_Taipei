@@ -1,0 +1,8 @@
+line-bot-sdk
+flask
+tensorflow
+matplotlib
+numpy
+keras
+ipython
+Pillow

@@ -16,9 +16,16 @@ from ai import AI
 from file import File
 
 # Channel Access Token
-line_bot_api = LineBotApi('Di/27BUeMNsc9h0MHevLE/qAwqoJz7R+FN9mjasLcm7qbocFR9KddHNyJJwL1maZQdeLCn/bO7+je4ZIA+OU+AjkhtJKdaJ+pFYQXwpksqhjMsdplwX8woI4gapKvej3klD/HaI6jsYEzX2rsC+bHZ36QdB04t89/1O/w1cDnyilFU=+t9Noe+lHmM5v/H+H9PgIP49aty8I1DzH71iAJ3I6QVwA95L5cdW/LXJFD/rT7VKywUpbrC5jKL6mZztUM9ieKtFS5O6hiCldBpThU8cOfPUrqGC3mgzOhzFvz4ds5/He/AdB04t89/1O/w1cDnyilFU=')
+file = open('channel_access_token.txt', encoding='utf8')
+text = file.read().strip()
+line_bot_api = LineBotApi(text)
+file.close()
+
 # Channel Secret
-handler = WebhookHandler('9144184a0089f3ea45a456c7586401e3')
+file = open('channel_secret.txt', encoding='utf8')
+text = file.read().strip()
+handler = WebhookHandler('')
+file.close()
 
 # 監聽所有來自 /callback 的 Post Request
 @app.route("/callback", methods=['POST'])
